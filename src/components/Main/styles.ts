@@ -87,8 +87,8 @@ export const BottomMenu = styled.div`
 `;
 
 const iconCSS = css`
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 31px;
   cursor: pointer;
   fill: var(--gray);
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePage from '../ProfilePage';
 
 import {
   Container,
@@ -25,6 +26,8 @@ const Main: React.FC = () => {
           <span>300 Tweets</span>
         </ProfileInfo>
       </Header>
+
+      <ProfilePage />
 
       <BottomMenu>
         <HomeIcon className="active" />
