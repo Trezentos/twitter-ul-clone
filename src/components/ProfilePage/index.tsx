@@ -9,7 +9,7 @@ import {
   ProfileData,
   LocationIcon,
   CakeIcon,
-  FollowAge,
+  Followage,
   EditButton,
 } from './styles';
 
@@ -39,17 +39,16 @@ const ProfilePage: React.FC = () => {
           </li>
         </ul>
 
-        <FollowAge>
+        <Followage>
           <span>
             seguindo <strong>94</strong>
           </span>
           <span>
             <strong>100</strong> seguidores.
           </span>
-        </FollowAge>
-
-        <Feed />
+        </Followage>
       </ProfileData>
+      <Feed />
     </Container>
   );
 };

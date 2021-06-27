@@ -46,7 +46,7 @@ export const Header = styled.div`
 `;
 
 export const BackIcon = styled(ArrowLeft)`
-  witdh: 24px;
+  width: 24px;
   height: 24px;
   fill: var(--twitter);
 `;
