@@ -1,11 +1,59 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Button from '../Button';
+
+import {
+  Container,
+  Topside,
+  Logo,
+  MenuButton,
+  HomeIcon,
+  BellIcon,
+  EmailIcon,
+  FavoriteIcon,
+  ProfileIcon,
+  Botside,
+  Avatar,
+  ProfileData,
+} from './styles';
 
 const MenuBar: React.FC = () => {
   return (
     <Container>
-      <h1>Menu Bar</h1>
+      <Topside>
+        <Logo />
+        <MenuButton>
+          <HomeIcon />
+          <span>Página Inicial</span>
+        </MenuButton>
+        <MenuButton>
+          <BellIcon />
+          <span>Notificações</span>
+        </MenuButton>
+        <MenuButton>
+          <EmailIcon />
+          <span>Mensagens</span>
+        </MenuButton>
+        <MenuButton>
+          <FavoriteIcon />
+          <span>Favoritos</span>
+        </MenuButton>
+        <MenuButton className="active">
+          <ProfileIcon />
+          <span>Perfil</span>
+        </MenuButton>
+
+        <Button>
+          <span>Tweetar</span>
+        </Button>
+      </Topside>
+      <Botside>
+        <Avatar />
+        <ProfileData>
+          <strong>Gustavo Fagundes</strong>
+          <span>gustavofagundes1998@hotmail.com</span>
+        </ProfileData>
+      </Botside>
     </Container>
   );
 };
