@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Favorite, Rocketseat, Chat } from '../../styles/icons';
+import { Favorite, Rocketseat, Chat } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: flex;

@@ -8,7 +8,7 @@ import {
   Email,
   ExitToApp,
   Rocketseat,
-} from '../../styles/icons';
+} from '../../styles/Icons';
 
 export const Container = styled.div`
   display: none;
@@ -163,5 +163,20 @@ export const ProfileData = styled.div`
 `;
 
 export const ExitIcon = styled(ExitToApp)`
-  ${iconCSS}
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: inline-block;
+    width: 25px;
+    heigth: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+
+    &:hover {
+      > path {
+        color: var(--like);
+      }
+    }
+  }
 `;

@@ -15,6 +15,7 @@ import {
   Botside,
   Avatar,
   ProfileData,
+  ExitIcon,
 } from './styles';
 
 const MenuBar: React.FC = () => {
@@ -53,6 +54,7 @@ const MenuBar: React.FC = () => {
           <strong>Gustavo Fagundes</strong>
           <span>gustavofagundes1998@hotmail.com</span>
         </ProfileData>
+        <ExitIcon />
       </Botside>
     </Container>
   );
