@@ -4,7 +4,6 @@ import { Search } from '../../styles/Icons';
 
 export const Container = styled.div`
   display: none;
-
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -23,7 +22,9 @@ export const SearchWrapper = styled.div`
 `;
 
 export const SearchInput = styled.input`
+  max-width: 325px;
   width: 100%;
+  width: max(325px, 100%);
   height: 39px;
   font-size: 14px;
   padding: 0 10px 0 52px;
@@ -47,6 +48,7 @@ export const SearchInput = styled.input`
     }
   }
 `;
+
 export const SearchIcon = styled(Search)`
   width: 27px;
   height: 27px;
@@ -58,4 +60,9 @@ export const Body = styled.div`
   flex-direction: column;
   padding: 57px 24px 200px;
   margin-top: 3px;
+  position: sticky;
+  top: 0;
+  > div + div {
+    margin-top: 15px;
+  }
 `;

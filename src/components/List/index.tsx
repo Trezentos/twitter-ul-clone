@@ -13,7 +13,7 @@ const List: React.FC<Props> = ({ title, elements }) => {
       <Item>
         <Title>{title}</Title>
       </Item>
-      {elements.map((elemetn, index) => (
+      {elements.map((element, index) => (
         <Item key={index}>{element}</Item>
       ))}
     </Container>
